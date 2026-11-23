@@ -378,9 +378,9 @@ const OFFICERS = [
   { role: "Senior Deacon", name: "Gerald V. Santarina", photo: "off7" },
   { role: "Junior Deacon", name: "Marcial M. Rosal", photo: "off8" },
   { role: "Senior Steward", name: "Mark L. Fajardo", photo: "off9" },
-  { role: "Junior Steward", name: "Ricaredo B. Tuazon", photo: "off10" },
-  { role: "Marshal", name: "Alejandro N. Hagad, III", photo: "off11" },
-  { role: "Master of Ceremonies", name: "Roberto B. Narajos, Jr." },
+  { role: "Junior Steward", name: "Ricaredo B. Tuazon" },
+  { role: "Marshal", name: "Alejandro N. Hagad, III", photo: "off10" },
+  { role: "Master of Ceremonies", name: "Roberto B. Narajos, Jr.", photo: "off11" },
   { role: "Musician", name: "Manuel R. Roxas, Jr." },
   { role: "Tiler", name: "Parish C. Saculles" }
 ];
@@ -389,7 +389,7 @@ const OFFICERS = [
 const PAST_MASTERS = [
   ["1993 – 1994","Ernesto E. Arriaga, PM","+"],
   ["1994 – 1995","Gerardo H. Lizarondo",""],
-  ["1995 – 1996","Reynaldo B. Climacosa","+"],
+  ["1995 – 1996","Reynaldo B. Climacosa",""],
   ["1996 – 1997","Antonio J. Peralez",""],
   ["1997 – 1998","Ronaldo E. Malapitan","+"],
   ["1998 – 1999","Ollie O. Veloso",""],
@@ -430,32 +430,17 @@ const EVENTS = [
   { date: "2026-11-13", title: "Stated Meeting", cat: "stated",
     time: "Dinner 6:30 pm | Meeting 7:30 pm", venue: "Arabia Shriners",
     desc: "Monthly stated meeting of Solidarity Lodge No. 1457." },
-  { date: "2026-11-26", title: "Thanksgiving Operation Turkey", cat: "community",
-    time: "6:00 am", venue: "9701 Almeda-Genoa Road Houston, TX 77075",
-    desc: "Join us Thanksgiving morning to package & deliver 3,500 meals to those less fortunate in Houston and the surrounding areas. Visit https://www.eventbrite.com/e/operation-turkey-thanksgiving-day-southeast-houston-tickets-2004264772889?aff=oddtdtcreator#location for details" },
   { date: "2026-12-04", title: "Fellowcraft Degree", cat: "degree",
     time: "Dinner 6:30 pm | Degree 7:30 pm", venue: "Arabia Shriners",
     desc: "Conferral of the Fellowcraft Degree. All Master Masons welcome; candidates report to the Senior Deacon." },
   { date: "2026-12-11", title: "Stated Meeting", cat: "stated",
     time: "Dinner 6:30 pm | Meeting 7:30 pm", venue: "Arabia Shriners",
     desc: "Monthly stated meeting of Solidarity Lodge No. 1457." },
-  { date: "2026-12-19", title: "Solidarity Lodge No. 1457 Christmas Party", cat: "social",
-    time: "Program 7:00 pm", venue: "Arabia Shriners",
-    desc: "Annual Christmas Party of Solidarity Lodge No. 1457." },
   /* Recurring stated meetings — 2nd Friday of each month (published lodge schedule).
      Add or adjust individual dates here as the lodge calendar is confirmed. */
   { date: "2027-01-08", title: "Stated Meeting", cat: "stated",
     time: "Dinner 6:30 pm | Meeting 7:30 pm", venue: "Arabia Shriners",
-	desc: "Monthly stated meeting of Solidarity Lodge No. 1457." },
-  { date: "2027-01-14", title: "GLoTX Annual Communication", cat: "social",
-    time: "9:00 AM \u2013 4:00 PM", venue: "715 Columbus Ave Waco, TX 76701",
-    desc: "Grand Lodge of Texas Annual Communication in Waco. Visit https://texasgrandannualcommunication.secureserversites.net/ for details" },
-  { date: "2027-01-15", title: "GLoTX Annual Communication", cat: "social",
-    time: "9:00 AM \u2013 8:00 PM", venue: "715 Columbus Ave Waco, TX 76701",
-    desc: "Grand Lodge of Texas Annual Communication in Waco. Visit https://texasgrandannualcommunication.secureserversites.net/ for details" },
-  { date: "2027-01-16", title: "GLoTX Annual Communication", cat: "social",
-    time: "9:00 AM to midnight", venue: "715 Columbus Ave Waco, TX 76701",
-    desc: "Grand Lodge of Texas Annual Communication in Waco. Visit https://texasgrandannualcommunication.secureserversites.net/ for details" },
+    desc: "Monthly stated meeting of Solidarity Lodge No. 1457." },
   { date: "2027-02-12", title: "Stated Meeting", cat: "stated",
     time: "Dinner 6:30 pm | Meeting 7:30 pm", venue: "Arabia Shriners",
     desc: "Monthly stated meeting of Solidarity Lodge No. 1457." },
@@ -694,8 +679,8 @@ function whoView(){
       + '<li><a href="https://www.solidarity1457.org/_files/ugd/c37182_937d0c5833d34c5884555f059799fa16.pdf" target="_blank" rel="noopener">Lodge By-laws (PDF)</a></li>'
       + '<li><a href="https://www.solidarity1457.org/_files/ugd/c37182_5cb16119d5744343936c8772b7eb6859.pdf" target="_blank" rel="noopener">Lodge Rules &amp; Regulations (PDF)</a></li>'
     + '</ul>'
-    + '<div class="photo-frame" style="margin-top:2rem"><img src="' + IMG.group + '" alt="The 2026 Officers of Solidarity Lodge No. 1457" loading="lazy"></div>'
-    + '<p class="cap">The 2026 Officers of Solidarity Lodge No. 1457 A.F. &amp; A.M., Houston, Texas.</p>'
+    + '<div class="photo-frame" style="margin-top:2rem"><img src="' + IMG.group + '" alt="The brethren of Solidarity Lodge No. 1457" loading="lazy"></div>'
+    + '<p class="cap">The brethren of Solidarity Lodge No. 1457 A.F. &amp; A.M., Houston, Texas.</p>'
   + '</div>'
   + '</div></section>';
 }
@@ -716,6 +701,7 @@ function masonryView(){
     + '<p>Nominal one-time fees apply for the conferral of the three degrees; afterward, yearly dues are paid to the member\u2019s lodge. True to the fraternity\u2019s oldest custom, <b>no Mason is supposed to ask another person to become a Mason</b> \u2014 an interested man must himself ask a Mason he knows for a petition to join.</p>'
     + '<div class="grid2" style="margin-top:2rem">'
       + '<div><div class="photo-frame"><img src="' + IMG.txp + '" alt="Historic engraved portrait of R:.W:. Anson Jones, PGM" loading="lazy"></div><p class="cap">R:.W:. Anson Jones, PGM \u2014 First Grand Master of Texas and the last President of the Republic.</p></div>'
+      + '<div><div class="photo-frame"><img src="' + IMG.leather + '" alt="The square and compasses" loading="lazy"></div><p class="cap">The Great Lights of the Craft.</p></div>'
     + '</div>'
   + '</div>'
   + '</div></section>'
